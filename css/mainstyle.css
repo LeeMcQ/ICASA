@@ -1,0 +1,27 @@
+
+body {
+  background-color: #f0f0f0;
+}
+
+.navbar{
+  background-color: #619081;
+}
+
+body {
+  font-family: "";
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.nav-item{
+  padding: 0 14px;
+  font-weight: 800;
+  
+
+}
+
+.nav-link {
+  font-size: 1.3rem;
+font-color: white;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ICASA Styles -->
+  <!-- <link rel="stylesheet" href="/css/vendors.1524493260.css">
+    <link rel="stylesheet" href="/css/style.1524493260.css"> -->
+
+  <title>Independent Communications Authority of South Africa</title>
+  <meta content="Independent Communications Authority of South Africa" property="og:title">
+
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta itemprop="description" content="">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images\icasa-logo.png">
+  <link rel="stylesheet" href="css/mainstyle.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/6c16543551.js" crossorigin="anonymous"></script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+    <!-- My code -->
+    <nav class="navbar  navbar-expand-lg navbar-dark" style="background-color: #619081">
+      <a class="navbar-brand" href="">
+        <img src="images\Icasa-01.svg" width="100%" height="100%" class="d-inline-block align-top" alt="images\icasa-logo.png" loading="lazy" style="background-color: #f0f0f0"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hs.html">Highsites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="TA.html">Type Approval</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bc.html">Broadcasting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="coc.html">Code of Conduct</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="int.html">Interference</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Contact Details</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    
+<h2>ICASA Type Approvals</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:20%;">TA Number</th>
+    <th style="width:30%;">Device</th>
+    <th style="width:30%;">Country</th>
+    <th style="width:20%;">Country</th>
+  </tr>
+  <tr><td>Alfreds Futterkiste</td><td>Germany</td><td>Germany</td><td>Germany</td></tr>
+  <tr>
+    <td>Berglunds snabbkop</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Koniglich Essen</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
