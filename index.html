@@ -46,8 +46,14 @@
     <meta name="theme-color" content="#ffffff"> -->
   </head>
 
-<body >
+  <body onload="var password = prompt ('Please provide password to unlock the site?')
+  var word = 'high'
 
+  if (password == word) {alert('You logged in!');
+  }
+  else{alert('wrong Password');
+  document.querySelector('body').style.visibility = 'hidden';
+  }">
 
   <!-- My code -->
   <nav class="navbar  navbar-expand-lg navbar-dark" style="background-color: #619081">
