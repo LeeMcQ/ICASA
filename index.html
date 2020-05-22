@@ -11,6 +11,7 @@
     <!-- <link rel="stylesheet" href="/css/vendors.1524493260.css">
       <link rel="stylesheet" href="/css/style.1524493260.css"> -->
 
+
     <title>Independent Communications Authority of South Africa</title>
     <meta content="Independent Communications Authority of South Africa" property="og:title">
 
@@ -47,12 +48,12 @@
   </head>
 
   <body onload="var password = prompt ('Please provide password to unlock the site?')
-  var word = 'high'
-
+  var password = password.toLowerCase();
+  var word = 'high';
   if (password == word) {alert('You logged in!');
   }
   else{alert('wrong Password');
-  document.querySelector('body').style.visibility = 'hidden';
+  document.querySelector('body').classList.toggle('invisible');
   }">
 
   <!-- My code -->
@@ -95,11 +96,11 @@
       <div class="col-lg-6 " style="background-color:">
         <h1>ICASA INSPECTORS</h1 style ="left: 50%">
         <div>
-          <button type="button" class="btn btn-outline-dark btn-block"><i class="fas fa-broadcast-tower"></i> Highsites</button>
-          <button type="button" class="btn btn-outline-dark btn-block" href="TA.html"><i class="fas fa-tag" ></i> Type Approvals </button>
-          <button type="button" class="btn btn-outline-dark btn-block"><i class="fas fa-bug"> Code of Conduct</i></button>
-          <button type="button" class="btn btn-outline-dark btn-block"><i class="fas fa-file-audio"></i> Broadcasting</button>
-          <button type="button" class="btn btn-outline-dark btn-block"><i class="fas fa-bug"> Interference</i></button>
+          <button type="button" class="btn btn-outline-dark btn-block"><a href="hs.html"><i class="fas fa-broadcast-tower"></i> Highsites</button>
+          <button type="button" class="btn btn-outline-dark btn-block"><a href="TA.html"><i class="fas fa-tag" ></i> Type Approvals </button>
+          <button type="button" class="btn btn-outline-dark btn-block"><a href="coc.html"><i class="fas fa-bug"> Code of Conduct</i></button>
+          <button type="button" class="btn btn-outline-dark btn-block"><a href="bc.html"><i class="fas fa-file-audio"></i> Broadcasting</button>
+          <button type="button" class="btn btn-outline-dark btn-block"><a href="int.html"><i class="fas fa-bug"> Interference</i></button>
         </div>
       <br >
       </div>
