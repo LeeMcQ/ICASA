@@ -1,0 +1,30 @@
+{
+  "short_name": "ICASA",
+  "name": "ICASA",
+  "theme_color": "#4A90E2",
+  "background_color": "#619081",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "images\icasa-logo.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images\icasa-logo.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images\icasa-logo.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images\icasa-logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/?utm_source=launcher"
+}
