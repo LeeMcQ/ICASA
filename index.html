@@ -19,6 +19,8 @@
     <meta property="og:description" content="">
     <meta itemprop="description" content="">
 
+    <!-- Homescreen popup -->
+    <link rel="manifest" href="/manifest.json">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- icon -->
@@ -47,29 +49,35 @@
     <meta name="theme-color" content="#ffffff"> -->
   </head>
 
-  <body onload="var password = prompt ('Please provide password to unlock the site?')
+  <body
+  onload="var password = prompt ('Please provide password to unlock the site?')
   var password = password.toLowerCase();
   var word = 'high';
   if (password == word) {alert('You logged in!');
   }
   else{alert('wrong Password');
   document.querySelector('body').classList.toggle('invisible');
-  }">
+  }"
+  >
 
   <!-- My code -->
   <nav class="navbar  navbar-expand-lg navbar-dark" style="background-color: #619081">
-    <a class="navbar-brand" href="">
+    <a class="navbar-brand" href="index.html">
       <img src="images\Icasa-01.svg" width="100%" height="100%" class="d-inline-block align-top" alt="images\icasa-logo.png" loading="lazy" style="background-color: #f0f0f0"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="hs.html">Highsites</a>
+        <li class="nav-item dropdown"  >
+          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Highsites
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #619081">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="TA.html">Type Approval</a>
@@ -84,7 +92,7 @@
           <a class="nav-link" href="int.html">Interference</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Contact Details</a>
+          <a class="nav-link" href="ecs.html">Licensing</a>
         </li>
       </ul>
     </div>
@@ -94,23 +102,23 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 " style="background-color:">
-        <h1>ICASA INSPECTORS</h1 style ="left: 50%">
+        <h1>ICASA INSPECTORS</h1>
         <div>
           <button type="button" class="btn btn-outline-dark btn-block"><a href="hs.html"><i class="fas fa-broadcast-tower"></i> Highsites</button>
           <button type="button" class="btn btn-outline-dark btn-block"><a href="TA.html"><i class="fas fa-tag" ></i> Type Approvals </button>
           <button type="button" class="btn btn-outline-dark btn-block"><a href="coc.html"><i class="fas fa-bug"> Code of Conduct</i></button>
           <button type="button" class="btn btn-outline-dark btn-block"><a href="bc.html"><i class="fas fa-file-audio"></i> Broadcasting</button>
           <button type="button" class="btn btn-outline-dark btn-block"><a href="int.html"><i class="fas fa-bug"> Interference</i></button>
+          <button type="button" class="btn btn-outline-dark btn-block"><a href="ecs.html"><i class="fas fa-bug"> Licensing</i></button>
         </div>
-      <br >
-      </div>
+        </div>
       <div class="col-lg-6 ">
         <div>
-          <img src="images\Skylark.jpg" alt="images\Skylark.jpg" width="100%" height="100%">
+          <img src="images\Skylark.jpg" alt="images\Skylark.jpg" width="100%" height="100%" class="border border-warning">
         </div>
       </div>
-      <br>
-
+  </div>
+    </div>
 
 
 
@@ -130,8 +138,20 @@
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+<!-- webpagepopup -->
+      <script>
+       if ('serviceWorker' in navigator) {
+          console.log("Will the service worker register?");
+          navigator.serviceWorker.register('service-worker.js')
+            .then(function(reg){
+              console.log("Yes, it did.");
+           }).catch(function(err) {
+              console.log("No it didn't. This happened:", err)
+          });
+       }
+      </script>
 </body>
+
 
 
 </html>
