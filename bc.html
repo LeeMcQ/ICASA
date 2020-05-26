@@ -7,9 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- ICASA Styles -->
-    <!-- <link rel="stylesheet" href="/css/vendors.1524493260.css">
-      <link rel="stylesheet" href="/css/style.1524493260.css"> -->
+
 
     <title>Independent Communications Authority of South Africa</title>
     <meta content="Independent Communications Authority of South Africa" property="og:title">
@@ -18,67 +16,64 @@
     <meta property="og:description" content="">
     <meta itemprop="description" content="">
 
+    <!-- Homescreen popup -->
+    <link rel="manifest" href="/manifest.json">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- icon -->
     <link rel="shortcut icon" type="image/x-icon" href="images\icasa-logo.png">
     <link rel="stylesheet" href="css/mainstyle.css">
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/6c16543551.js" crossorigin="anonymous"></script>
-
-
-    <!-- NOT Sure what this does   -->
-    <!-- <meta name="twitterHandle" content="ICASA_org" id="twitterHandle">
-      <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-P8DH6M8"></script><script>
-      window.socialPlatforms = {"twitter":"ICASA_org","facebook":"","youtube":"","google":"","pinterest":""};
-    </script>
-    <meta name="google-site-verification" content="vEbw_EEj-bNXibo9yl4XkdX1uT0WgyIudQbjzB8Xk24"> <meta name="msvalidate.01" content="1259FF81DD1E8CB727E0086B5941AB71"> -->
-    <!--
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/favicons/manifest.json">
-    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#ffffff">
-    <link rel="shortcut icon" href="/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff"> -->
   </head>
 
-<body >
-
+<body>
 
   <!-- My code -->
-  <nav class="navbar  navbar-expand-lg navbar-dark" style="background-color: #619081">
-    <a class="navbar-brand" href="">
-      <img src="images\Icasa-01.svg" width="100%" height="100%" class="d-inline-block align-top" alt="images\icasa-logo.png" loading="lazy" style="background-color: #f0f0f0"></a>
+  <nav class="navbar  navbar-expand-lg navbar-dark sticky-top">
+    <a class="navbar-brand" href="index.html">
+      <img src="images\Icasa-01.svg" width="90%" height="90%" class="d-inline-block align-top " alt="images\icasa-logo.png" loading="lazy" style="background-color: #f0f0f0"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Highsites
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Reapeater Highsite</a>
+            <a class="dropdown-item" href="#">Backhaul Link Highsite</a>
+            <a class="dropdown-item" href="#">Licence Free Highsite</a>
+            <a class="dropdown-item" href="HSform.html">Highsite Inspection Form</a>
+          </div>
+
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="hs.html">Highsites</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type Approval</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="TA.html"> Type Approval</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="TA.html">Type Approval</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="bc.html">Broadcasting</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="coc.html">Code of Conduct</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Licensing</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="bc.html">Broadcasting</a>
+            <a class="dropdown-item" href="ecs.html">ECS/ECNS</a>
+            <a class="dropdown-item" href="coc.html">Code of Conduct</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="int.html">Interference</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Contact Details</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Utilities</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="bc.html">Your idea</a>
+            <a class="dropdown-item" href="ecs.html">Your idea</a>
+            <a class="dropdown-item" href="coc.html">Your idea</a>
+          </div>
         </li>
+
+
       </ul>
     </div>
   </nav>

@@ -7,11 +7,13 @@ body {
   color: inherit;
 }
 
-h1 {
+h1, h2 {
   text-align: center
 }
 
-.navbar{
+.navbar,
+.dropdown-menu
+{
   background-color: #619081;
 }
 
@@ -21,9 +23,6 @@ h1 {
   font-weight: 800;
 }
 
-.dropdown-menu {
-  background-color: #619081;
-}
 
 .dropdown-item{
 color: white;
