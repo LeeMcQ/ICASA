@@ -49,73 +49,89 @@
     <meta name="theme-color" content="#ffffff"> -->
   </head>
 
-  <body
-  onload="var password = prompt ('Please provide password to unlock the site?')
-  var password = password.toLowerCase();
-  var word = 'high';
-  if (password == word) {alert('You logged in!');
-  }
-  else{alert('wrong Password');
-  document.querySelector('body').classList.toggle('invisible');
-  }"
-  >
+<body>
 
   <!-- My code -->
   <nav class="navbar  navbar-expand-lg navbar-dark" style="background-color: #619081">
     <a class="navbar-brand" href="index.html">
       <img src="images\Icasa-01.svg" width="100%" height="100%" class="d-inline-block align-top" alt="images\icasa-logo.png" loading="lazy" style="background-color: #f0f0f0"></a>
-    <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown"  >
-          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Highsites
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #619081">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Highsites
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Reapeater Highsite</a>
+            <a class="dropdown-item" href="#">Backhaul Link Highsite</a>
+            <a class="dropdown-item" href="#">Licence Free Highsite</a>
+            <a class="dropdown-item" href="HSform.html">Highsite Inspection Form</a>
+          </div>
+
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="TA.html">Type Approval</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type Approval</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="TA.html"> Type Approval</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="bc.html">Broadcasting</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="coc.html">Code of Conduct</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Licensing</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="bc.html">Broadcasting</a>
+            <a class="dropdown-item" href="ecs.html">ECS/ECNS</a>
+            <a class="dropdown-item" href="coc.html">Code of Conduct</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="int.html">Interference</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ecs.html">Licensing</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Utilities</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="bc.html">Your idea</a>
+            <a class="dropdown-item" href="ecs.html">Your idea</a>
+            <a class="dropdown-item" href="coc.html">Your idea</a>
+          </div>
         </li>
+
+
       </ul>
     </div>
   </nav>
   <br>
   <!-- Title -->
-  <div class="container">
-  <div class="row">
-    <div class="col-lg-6">
-      <h1>ICASA INSPECTORS</h1>
-      <a href="hs.html" class="btn btn-outline-dark btn-block"><i class="fas fa-broadcast-tower"></i> Highsites</button>
-      <a href="TA.html" class="btn btn-outline-dark btn-block" ><i class="fas fa-tag"></i> Type Approvals </button>
-      <a href="coc.html" class="btn btn-outline-dark btn-block"><i class="fas fa-bug"> Code of Conduct</i></button>
-      <a href="bc.html" class="btn btn-outline-dark btn-block"><i class="fas fa-file-audio"></i> Broadcasting</button>
-      <a href="int.html" class="btn btn-outline-dark btn-block" disabled><i class="fas fa-bug"> Interference</i></button>
-      <a href="ecs.html" class="btn btn-outline-dark btn-block"><i class="fas fa-bug"> Licensing</i></button>
-    </div>
 
-    <div class="col-lg-6">
-      <img src="images\Skylark.jpg" alt="images\Skylark.jpg" width="80%" height="80%">
-    </div>
-  </div>
-</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 " style="background-color:">
+        <h1>ICASA INSPECTORS </h1>
+        <br />
+      </div>
+      <div class="row">
+        <div class="col-lg-5 ">
+          <a href="hs.html" class="btn btn-outline-dark btn-block" role="button"><i class="fas fa-broadcast-tower"></i> Highsites</a>
+          <a href="TA.html" class="btn btn-outline-dark btn-block" role="button"><i class="fas fa-tag"></i> Type Approvals</a>
+          <a href="ecs.html" class="btn btn-outline-dark btn-block" role="button"><i class="fas fa-file-alt"></i> Licensing</i></a>
+          <a href="bc.html" class="btn btn-outline-dark btn-block" role="button"><i class="fas fa-file-audio"></i> Broadcasting</a>
+          <a href="int.html" class="btn btn-outline-dark btn-block" role="button"><i class="fas fa-bug"> Interference</i></a>
+
+        </div>
+        <div class="col-lg-1 ">
+          <br>
+        </div>
+        <div class="col-lg-6 ">
+          <figure class="figure">
+            <img src="images\Skylark.jpg" class="figure-img img-thumbnail rounded" alt="...">
+            <figcaption class="figure-caption text-center font-weight-bold ">SkyLark</figcaption>
+          </figure>
+        </div>
+      </div>
+
+
 
 
 
@@ -136,17 +152,17 @@
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<!-- webpagepopup -->
+      <!-- webpagepopup -->
       <script>
-       if ('serviceWorker' in navigator) {
+        if ('serviceWorker' in navigator) {
           console.log("Will the service worker register?");
           navigator.serviceWorker.register('service-worker.js')
-            .then(function(reg){
+            .then(function(reg) {
               console.log("Yes, it did.");
-           }).catch(function(err) {
+            }).catch(function(err) {
               console.log("No it didn't. This happened:", err)
-          });
-       }
+            });
+        }
       </script>
 </body>
 
