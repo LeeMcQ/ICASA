@@ -1,13 +1,5 @@
 <!DOCTYPE html>
-<hml lang="en" dir="ltr">
-
-<!-- Let the browser to hide the adress bar when its loaded from homescreen shortcut? -->
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes"/>
-<meta name="mobile-web-app-capable" content="yes/">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="ICASA">
+<html lang="en" dir="ltr">
 
 <head>
 
@@ -25,35 +17,15 @@
     <meta itemprop="description" content="">
 
     <!-- Homescreen popup -->
-
-  <link rel="stylesheet" type="text/css"  href="addToHomeScreen/style/addtohomescreen.css" />
-  <link rel="apple-touch-icon" sizes="57x57" href="addToHomeScreen/img/sapple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="addToHomeScreen/img/sapple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="addToHomeScreen/img/sapple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="addToHomeScreen/img/sapple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="addToHomeScreen/img/sapple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="addToHomeScreen/img/sapple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="addToHomeScreen/img/sapple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="addToHomeScreen/img/sapple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="addToHomeScreen/img/sapple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="addToHomeScreen/img/sandroid-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="addToHomeScreen/img/sfavicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="addToHomeScreen/img/sfavicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="addToHomeScreen/img/sfavicon-16x16.png">
-  <link rel="manifest" href="addToHomeScreen/img/smanifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="addToHomeScreen/img/sms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-
+    <link rel="manifest" href="/manifest.json">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- icon -->
     <link rel="shortcut icon" type="image/x-icon" href="images\icasa-logo.png">
     <link rel="stylesheet" href="css/mainstyle.css">
-</head>
 
-<body>
-
+  </head>
+  <body>
   <!-- My code -->
   <nav class="navbar  navbar-expand-lg navbar-dark sticky-top" >
     <a class="navbar-brand" href="index.html">
@@ -108,23 +80,104 @@
   <!-- Title -->
 
 
-  <div class="container">
+<form action="http://localhost:4000/www/www.closeby.co.za/TheGen.php" method="POST" enctype='multipart/form-data'>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 " style="background-color:">
+      <h1>Ship Stations </h1>
+      <br />
+    </div>
     <div class="row">
-      <div class="col-lg-12 " style="background-color:">
-        <h1>ICASA INSPECTORS </h1>
-        <br />
-      </div>
-      <div class="row">
-        <div class="col-lg-5 ">
-          <a href="hs.html" class="btn btn-outline-dark btn-block" role="button"><i class="fas fa-broadcast-tower"></i> Highsites</a>
-          <a href="TA.html" class="btn btn-outline-dark btn-block" role="button"><i class="fas fa-tag"></i> Type Approvals</a>
-          <a href="ecs.html" class="btn btn-outline-dark btn-block" role="button"><i class="fas fa-file-alt"></i> Licensing</i></a>
-          <a href="bc.html" class="btn btn-outline-dark btn-block" role="button"><i class="fas fa-file-audio"></i> Broadcasting</a>
-          <a href="int.html" class="btn btn-outline-dark btn-block" role="button"><i class="fas fa-bug"> Interference</i></a>
+      <div class="col-lg-5 ">
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="MMSI">MMSI</span>
+          </div><input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="LicenceNumber">Licence Number</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="EPIRB">EPIRB</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="ShipName">Ship Name</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="CallSign">Call Sign</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="OwnerName">Owner Name</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="Adress">Adress</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="ContactNumber">Contact Number</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="Email">Email</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="DateTime" > Date & Time</span>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+</script>
+
+<span id="datetime"></span>
+
+          </div>
+          <input type="text" class="form-control" placeholder="HI"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+
+        <a type='submit' type='submit' class="btn btn-outline-dark btn-block" role="button">GENERATE</a>
+
+
+        </form>
+
 
         </div>
-        <div class="col-lg-1 ">
-          <br>
+          <div class="col-lg-1 ">
+            <br>
+
 
 <!-- carousel -->
         </div>
@@ -177,38 +230,13 @@
 
 
 
+  <!-- JAVA script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  </body>
 
 
 
-      <!-- ICASA code -->
-
-
-
-
-
-
-
-
-
-      <!-- JAVA script -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-      <!-- webpagepopup -->
-      <script src="text/javascript" scr="addToHomeScreen/src/addtohomescreen.js"></script>
-
-      <script>
-      //if the website is not opened in app MODE show (in browser)
-      if(
-        (("standalone" in window.navigator) && !window.navigator.standalone) //iOS
-        ||
-        (!window.matchMedia('(display-mode: standalone)').matches)// ANDRIOD
-      ){addToHomeScreen();
-      }
-      </script>
-
-</body>
-
-
-
-</html>
+  </html>
