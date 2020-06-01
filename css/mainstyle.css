@@ -17,6 +17,10 @@ h1, h2 {
   background-color: #619081;
 }
 
+.placeholder
+{color: grey;
+font-weight: bolder;
+}
 
 .nav-item{
   padding: 0 14px;
