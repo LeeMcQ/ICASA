@@ -105,6 +105,7 @@
 
 
   <!-- Title -->
+  <hr />
   <div class="container">
     <div class="row">
       <div class="col-lg-12 ">
@@ -161,7 +162,7 @@
 
         <br />
       </div>
-      <br />
+      <hr />
 
       <div class="col-lg-6 ">
         <h2><i class="fas fa-broadcast-tower"></i> Repeater</h2>
@@ -282,16 +283,61 @@
 
         <h2><i class="fas fa-broadcast-tower"></i> Backhaul Link</h2>
 
-        <div>
+
+                <div>
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend ">
+                        <span class="input-group-text " id="MMSI">Transmitter/ Antenna Models</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Biolink" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+
+
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="ShipName">Frequency (GHz)</span>
+                        <span class="input-group-text" id="ShipName">Licenced</span>
+                      </div>
+                      <input type="number" class="form-control" placeholder="2.1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                    <span class="input-group-text" id="ShipName">Measured</span>
+
+                  <input type="number" class="form-control" placeholder="2.145" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="ShipName">Antenna</span>
+                    <span class="input-group-text" id="ShipName">Height (m)</span>
+                  </div>
+                  <input type="email" class="form-control" placeholder="11" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                <span class="input-group-text" id="ShipName">Bearing/Azimuth (˚)</span>
+
+              <input type="number" class="form-control" placeholder="180" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="ShipName">Est. Receiving Antenna Location</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Community" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+
+                </div>
+                <br>
               </div>
+
                 </div>
 
           <div class="container">
             <div class="row">
               <div class="col-lg-12 ">
-
+<hr />
                   <h2><i class="fas fa-broadcast-tower"></i> Conclusion</h2>
 
+<hr />
 
 
 
@@ -330,9 +376,18 @@
         <br>
         <!-- <a type='submit' onclick="showInput();" class="btn btn-outline-dark btn-block" role="button">GENERATE REPORT</a> -->
         <a href="Hig.pdf" class="btn btn-outline-dark btn-block" role="button"><i class="fas fa-file-audio"></i> GENERATE REPORT</a>
-
-      </form>
       </div>
+      </div>
+      </form>
+
+
+      <!--FOOTER SECTION -->
+      <section>
+        <hr /><br /><div class="footer" id="footer">
+          <p>© Independent Communications Authority of South Africa . All Rights Reserved.</p>
+          <p>lmcquire@icasa.org.za | All Right Reserved | Terms | Policies | Licenses</p>
+        </div></section>
+
 
       <!-- JAVA script -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

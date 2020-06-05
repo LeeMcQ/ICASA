@@ -13,6 +13,12 @@ h1, h2 {
 
 }
 
+.footer {
+  text-align: center;
+
+}
+
+
 h5 {
 color: black;
 }
@@ -41,4 +47,9 @@ color: white;
 
 .nav-link {
   font-size: 1.5rem;
+}
+
+hr
+{
+border-style: none;
 }
