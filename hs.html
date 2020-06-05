@@ -1,106 +1,338 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<hml lang="en" dir="ltr">
 
-<head>
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
     <title>Independent Communications Authority of South Africa</title>
     <meta content="Independent Communications Authority of South Africa" property="og:title">
 
     <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="description" content="">
     <meta property="og:description" content="">
     <meta itemprop="description" content="">
 
+    <!-- Let the browser to hide the adress bar when its loaded from homescreen shortcut? -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes/">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="ICASA">
+
     <!-- Homescreen popup -->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" type="text/css" href="addToHomeScreen/style/addtohomescreen.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="addToHomeScreen/img/sapple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="addToHomeScreen/img/sapple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="addToHomeScreen/img/sapple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="addToHomeScreen/img/sapple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="addToHomeScreen/img/sapple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="addToHomeScreen/img/sapple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="addToHomeScreen/img/sapple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="addToHomeScreen/img/sapple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="addToHomeScreen/img/sapple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="addToHomeScreen/img/sandroid-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="addToHomeScreen/img/sfavicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="addToHomeScreen/img/sfavicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="addToHomeScreen/img/sfavicon-16x16.png">
+    <link rel="manifest" href="addToHomeScreen/img/smanifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="addToHomeScreen/img/sms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <!-- icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images\icasa-logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icasa-logo.png">
     <link rel="stylesheet" href="css/mainstyle.css">
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <!-- My code -->
-  <nav class="navbar  navbar-expand-lg navbar-dark sticky-top" >
-    <a class="navbar-brand" href="index.html">
-      <img src="images\Icasa-01.svg" width="90%" height="90%" class="d-inline-block align-top " alt="images\icasa-logo.png" loading="lazy" style="background-color: #f0f0f0"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Highsites
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Reapeater Highsite</a>
-            <a class="dropdown-item" href="#">Backhaul Link Highsite</a>
-            <a class="dropdown-item" href="#">Licence Free Highsite</a>
-            <a class="dropdown-item" href="HSform.html">Highsite Inspection Form</a>
-          </div>
+    <!-- My code -->
+    <nav class="navbar  navbar-expand-lg navbar-dark sticky-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="images\icasa-logo.png" width="80%" height="80%" class="d-inline-block align-top rounded-sm" alt="images\icasa-logo.png" loading="lazy" style="background-color: #f0f0f0"></a>
 
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type Approval</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="TA.html"> Type Approval</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Licensing</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="bc.html">Broadcasting</a>
-            <a class="dropdown-item" href="ecs.html">ECS/ECNS</a>
-            <a class="dropdown-item" href="coc.html">Code of Conduct</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="int.html">Interference</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Utilities</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="bc.html">Your idea</a>
-            <a class="dropdown-item" href="ecs.html">Your idea</a>
-            <a class="dropdown-item" href="coc.html">Your idea</a>
-          </div>
-        </li>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Highsites
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="hs.html">Highsite Inspection</a>
+              <a class="dropdown-item" href="hs.html">Highsite  Database</a>
+              <a class="dropdown-item" href="HSform.html">Highsite Inspection Form</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type Approval</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="TA.html"> Type Approval</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Licensing</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="bc.html">Broadcasting</a>
+              <a class="dropdown-item" href="ecs.html">ECS/ECNS</a>
+              <a class="dropdown-item" href="coc.html">Code of Conduct</a>
+              <a class="dropdown-item" href="Shipstation.html">EPIRB</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="int.html">Interference</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="hs.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Utilities</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="bc.html">Your idea</a>
+              <a class="dropdown-item" href="ecs.html">Your idea</a>
+              <a class="dropdown-item" href="coc.html">Your idea</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
 
-      </ul>
-    </div>
-  </nav>
-  <br>
   <!-- Title -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 " style="background-color:">
-        <h1><i class="fas fa-broadcast-tower"></i> HIGHSITES</h1 style="text-align: center">
+      <div class="col-lg-12 ">
+        <h1><i class="fas fa-broadcast-tower"></i> HIGHSITES INSPECTION FORM</h1>
         <br />
+          <h2><i class="fas fa-broadcast-tower"></i> Highsite Information</h2>
+
+
+        <form action="http://localhost:4000/www/www.closeby.co.za/TheGen.php" method="POST" enctype='multipart/form-data'>
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend ">
+              <span class="input-group-text " id="MMSI">High Site Name</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Paarlberg" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="LicenceNumber">Site Owner</span>
+            </div>
+            <input type="text" class="form-control" placeholder="TwoCOM" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="EPIRB ID Code">Contact Person</span>
+            </div>
+            <input type="text" class="form-control" placeholder="James WIkki" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="ShipName">Contact Details</span>
+              <span class="input-group-text" id="ShipName">EMail</span>
+            </div>
+            <input type="email" class="form-control" placeholder="MIDLIFE_MADNESS@gmail.com" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+          <span class="input-group-text" id="ShipName">Phone number</span>
+
+        <input type="number" class="form-control" placeholder="0834548445" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="CallSign">Coordinates</span>
+            </div>
+            <input type="text" class="form-control" placeholder="ZR3843" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+
+        <br />
+      </div>
+      <br />
+
+      <div class="col-lg-6 ">
+        <h2><i class="fas fa-broadcast-tower"></i> Repeater</h2>
+
+        <div>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend ">
+                <span class="input-group-text " id="MMSI">Radio Dealer Name</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Tow.COM" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="LicenceNumber">Contact Person</span>
+              </div>
+              <input type="text" class="form-control" placeholder="James WIki" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="ShipName">Contact Details</span>
+                <span class="input-group-text" id="ShipName">EMail</span>
+              </div>
+              <input type="email" class="form-control" placeholder="MIDLIFE_MADNESS@gmail.com" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+            <span class="input-group-text" id="ShipName">Phone number</span>
+
+          <input type="number" class="form-control" placeholder="0834548445" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="ShipName">Type of Service</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Community" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="ShipName">Licenced Frequency (MHz) </span>
+                <span class="input-group-text" id="ShipName">Transmitting</span>
+              </div>
+              <input type="email" class="form-control" placeholder="43" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+            <span class="input-group-text" id="ShipName">Recieving</span>
+
+          <input type="number" class="form-control" placeholder="41.5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="ShipName">Measured Frequency (MHz) </span>
+            <span class="input-group-text" id="ShipName">Transmitting</span>
+          </div>
+          <input type="email" class="form-control" placeholder="43" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+        <span class="input-group-text" id="ShipName">Recieving</span>
+
+      <input type="number" class="form-control" placeholder="41.5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
         <div>
 
-          <button type="button" class="btn btn-outline-dark btn-block"> Reapeater Highsite</button>
-          <button type="button" class="btn btn-outline-dark btn-block" href="TA.html"> Backhaul Link Highsite </button>
-          <button type="button" class="btn btn-outline-dark btn-block">Licence Free Highsite</button>
-          <button type="button" class="btn btn-outline-dark btn-block"> Highsite Inspection Form</button>
+        <span class="input-group-text" id="ShipName">RF Power (w) </span>
+        </div>
+        <span class="input-group-text" id="ShipName">Licensed</span>
+      </div>
+      <input type="email" class="form-control" placeholder="43" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+    <span class="input-group-text" id="ShipName">Measured</span>
+
+  <input type="number" class="form-control" placeholder="41.5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+        <div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div>
+
+              <span class="input-group-text" id="ShipName">Reflected </span>
+</div>
+            <input type="email" class="form-control" placeholder="43" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <div>
+          <span class="input-group-text" id="ShipName">SWR</span>
+</div>
+        <input type="number" class="form-control" placeholder="41.5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+      </div>
+      </div>
+      </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="OwnerName">Repeater Make & Model</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Baufeng" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="Adress">Filtering</span>
+              </div>
+              <input type="text" class="form-control" placeholder="none" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+
+
 
         </div>
         <br>
       </div>
-      <div class="col-lg-6 ">
-        <div>
-          <img src="images\Skylark.jpg" alt="images\Skylark.jpg" width="100%" height="100%">
-        </div>
-      </div>
-      <br>
 
+      <div class="col-lg-6 ">
+
+        <h2><i class="fas fa-broadcast-tower"></i> Backhaul Link</h2>
+
+        <div>
+              </div>
+                </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 ">
+
+                  <h2><i class="fas fa-broadcast-tower"></i> Conclusion</h2>
+
+
+
+
+
+
+
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="LicenceNumber">Investigation Officer</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Poppy Lee" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="EPIRB ID Code">DATE</span>
+                    </div>
+                    <input type="Date" class="form-control" placeholder="78564674" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  </div>
+
+
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend" id="button-addon3">
+                      <button class="btn btn-outline-secondary" type="button">Compliant</button>
+                      <button class="btn btn-outline-secondary" type="button">None Complaint</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Comments" aria-label="Example text with two button addons" aria-describedby="button-addon3">
+                  </div>
+
+                <br />
+              </div>
+
+        </div>
+        <br>
+        <!-- <a type='submit' onclick="showInput();" class="btn btn-outline-dark btn-block" role="button">GENERATE REPORT</a> -->
+        <a href="Hig.pdf" class="btn btn-outline-dark btn-block" role="button"><i class="fas fa-file-audio"></i> GENERATE REPORT</a>
+
+      </form>
+      </div>
 
       <!-- JAVA script -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

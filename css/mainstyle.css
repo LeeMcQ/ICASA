@@ -8,8 +8,15 @@ body {
 }
 
 h1, h2 {
-  text-align: center
+  text-align: center;
+ background-color: #fdb945;
+
 }
+
+h5 {
+color: black;
+}
+
 
 .navbar,
 .dropdown-menu
@@ -33,5 +40,5 @@ color: white;
 }
 
 .nav-link {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
