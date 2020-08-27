@@ -183,8 +183,10 @@ text-align: center;
        background-color: #fdb945;
     font-weight: bold;
 font-family: sans-serif;
-       margin: 0;
-       padding: 0;
+
+       margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+
       }
 
 
@@ -407,17 +409,21 @@ font-family: sans-serif;
     <div class="subscribe-card">
 
 <form action-xhr=http://www.datashine.co.za/SJ_question.php method="post" class="main-form" target="_top" custom-validation-reporting="as-you-go">
+<div>
+  <h1><br/>ICASA<br/><br/></h1>
+  </div>
 
-        <h1>ICASA<br/></h1>
         <h2>Interference Complaint Form </h2>
         <p>Please complete the following complaint form.</p>
 
 <h2>Complainent Information</h2>
 <br />
 <div class="input">
-
-  <label for="form-name">Complainant Name or Company:<br /></label>
+<div>
+  <label for="form-name">Complainant Name or Company:</label>
   <textarea id="Complainent_name" rows="1" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+
+  </div>
 
 
 
@@ -434,7 +440,7 @@ font-family: sans-serif;
         </select>
 <br />
         <label for="form-name">Contact Number:</label>
-        <input type="tel" id="as-you-go_tel"  style='width:50%'  spellcheck="default" required><br>
+        <input type="tel" id="as-you-go_tel"  style='width:100%'  spellcheck="default" required><br>
 
         <label for="form-name">Email Adress:</label>
         <input type="email" id="as-you-go-email"  placeholder="Email..."  style='width:50%'  spellcheck="default" required><br>
@@ -497,7 +503,7 @@ font-family: sans-serif;
           </select>
           <br />
 
-          <textarea id="Interference_fre" placeholder="Please discribe..." rows="2" style='width:70%' autoexpand name="post_title" spellcheck="default"
+          <textarea id="Interference_fre" placeholder="Please discribe..." rows="2" style='width:100%' autoexpand name="post_title" spellcheck="default"
          class="hide"
          [class]="visibility||'show'"></textarea>
 <br />
@@ -515,14 +521,14 @@ font-family: sans-serif;
 
 
 <label for="form-name">How did you determine that this is Interference?<br /></label>
-<textarea id="Complainent_name" rows="5" style='width:95%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+<textarea id="Complainent_name" rows="5" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 <br />
 
 <label for="form-name">Discribe what had been done to solve the Interference?<br /></label>
-<textarea id="Complainent_name" rows="5" style='width:95%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+<textarea id="Complainent_name" rows="5" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 
 <label for="form-name">Is there any suspected sources of the Interference?<br /></label>
-<textarea id="Complainent_name" rows="5" style='width:95%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+<textarea id="Complainent_name" rows="5" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 
 
 
@@ -534,7 +540,7 @@ font-family: sans-serif;
 
         <div class="input">
           <label for="form-name">Image Caption:<br></label>
-          <textarea id="form-name" rows="2" style='width:95%' autoexpand name="Image_Caption" spellcheck="default" required></textarea><br>
+          <textarea id="form-name" rows="2" style='width:100%' autoexpand name="Image_Caption" spellcheck="default" required></textarea><br>
         </div>
 
         <br>
