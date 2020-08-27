@@ -23,12 +23,9 @@ unset($mres_title, $connect);
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-  <!--To point to none amp version of site
-<link rel="canonical" href="hello-world.html">
--->
 
-  <meta name="description" content="Swartland Joernaal Article Generator">
-  <link rel="shortcut icon" type="image/x-icon" href="img/MB_logo.png">
+  <meta name="description" content="ICASA Intereference Complaint Form">
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.icasa.org.za/favicons/favicon.ico">
 
   <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
   <link rel="preload" as="script" href="https://cdn.ampproject.org/v0/amp-experiment-0.1.js">
@@ -48,9 +45,7 @@ unset($mres_title, $connect);
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <style amp-custom>
 
-  </style>
   <style amp-boilerplate>
     body {
       -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -120,7 +115,7 @@ unset($mres_title, $connect);
   </noscript>
 
   <link rel="canonical" href=".">
-  <title>My AMP Page</title>
+  <title>ICASA Interference Complaint Form</title>
   <link rel="manifest" href="/manifest.json">
   <script type="application/ld+json">
     {
@@ -152,9 +147,6 @@ unset($mres_title, $connect);
       }
     }
   </script>
-
-  <!-- AMP Analytics -->
-  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
 
     <style amp-custom>
@@ -406,7 +398,7 @@ font-family: sans-serif;
       }
 
     </style>
-</head>
+
 
 <body>
 
@@ -425,27 +417,27 @@ font-family: sans-serif;
 <div class="input">
 
   <label for="form-name">Complainant Name or Company:<br /></label>
-  <textarea type="text" id="Complainent_name" rows="1" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+  <textarea id="Complainent_name" rows="1" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 
 
 
   <label for="form-name">Physical Address:<br /></label>
-  <textarea type="text" id="Complainent_address" rows="3" style='width:50%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+  <textarea id="Complainent_address" rows="3" style='width:50%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 
 
 
 <label for="form-name">Province/Region:</label>
-        <select name="Province" id="Province" placeholder="Provice...">
+        <select name="Province" id="Province" >
          <option value="Western Cape" >Western Cape</option>
          <option value="Eastern Cape" >Eastern Cape</option>
          <option value="Northern Cape" >Northern Cape</option>
         </select>
 <br />
         <label for="form-name">Contact Number:</label>
-        <input type="tel" id="as-you-go_tel" rows="1" style='width:50%' autoexpand name="post_title" spellcheck="default" required><br>
+        <input type="tel" id="as-you-go_tel"  style='width:50%'  spellcheck="default" required><br>
 
         <label for="form-name">Email Adress:</label>
-        <input type="email" id="as-you-go-email"  placeholder="Email..." rows="1" style='width:50%' autoexpand name="post_title" spellcheck="default" required><br>
+        <input type="email" id="as-you-go-email"  placeholder="Email..."  style='width:50%'  spellcheck="default" required><br>
         <span visible-when-invalid="valueMissing"
             validation-for="as-you-go-email"></span>
           <span visible-when-invalid="typeMismatch"
@@ -467,7 +459,7 @@ font-family: sans-serif;
           </select>
           <br />
 
-          <!-- <textarea type="text" id="Interf_location" placeholder="Please discribe..." rows="2" style='width:70%' autoexpand name="post_title" spellcheck="default"
+          <!-- <textarea id="Interf_location" placeholder="Please discribe..." rows="2" style='width:70%' autoexpand name="post_title" spellcheck="default"
          class="show"
          [class]="visibility||'show'"></textarea> -->
 
@@ -492,10 +484,10 @@ font-family: sans-serif;
 
 
   <label for="form-name">Interference Start Date:</label>
-  <input type="datetime-local"  value="YYYY-MM-DD HH:MM:SS" id="as-you-go_tel"  autoexpand required><br>
+  <input type="datetime-local"  value="YYYY-MM-DD HH:MM:SS" id="as-you-go_tel"  required><br>
 
   <label for="form-name">Interference Location:<br /></label>
-  <textarea type="text" id="Interf_location" rows="1" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+  <textarea id="Interf_location" rows="1" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 
   <label for="form-name">Period of Interference:</label>
           <select name="Interference_fre" id="Interference_period" required
@@ -505,7 +497,7 @@ font-family: sans-serif;
           </select>
           <br />
 
-          <textarea type="text" id="Interference_fre" placeholder="Please discribe..." rows="2" style='width:70%' autoexpand name="post_title" spellcheck="default"
+          <textarea id="Interference_fre" placeholder="Please discribe..." rows="2" style='width:70%' autoexpand name="post_title" spellcheck="default"
          class="hide"
          [class]="visibility||'show'"></textarea>
 <br />
@@ -523,14 +515,14 @@ font-family: sans-serif;
 
 
 <label for="form-name">How did you determine that this is Interference?<br /></label>
-<textarea type="text" id="Complainent_name" rows="5" style='width:95%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+<textarea id="Complainent_name" rows="5" style='width:95%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 <br />
 
 <label for="form-name">Discribe what had been done to solve the Interference?<br /></label>
-<textarea type="text" id="Complainent_name" rows="5" style='width:95%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+<textarea id="Complainent_name" rows="5" style='width:95%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 
 <label for="form-name">Is there any suspected sources of the Interference?<br /></label>
-<textarea type="text" id="Complainent_name" rows="5" style='width:95%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+<textarea id="Complainent_name" rows="5" style='width:95%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 
 
 
@@ -542,7 +534,7 @@ font-family: sans-serif;
 
         <div class="input">
           <label for="form-name">Image Caption:<br></label>
-          <textarea type="text" id="form-name" rows="2" style='width:95%' autoexpand name="Image_Caption" spellcheck="default" required></textarea><br>
+          <textarea id="form-name" rows="2" style='width:95%' autoexpand name="Image_Caption" spellcheck="default" required></textarea><br>
         </div>
 
         <br>
@@ -575,8 +567,6 @@ font-family: sans-serif;
   <!-- Google Tag Manager -->
   <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-PNS2QP4&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
 
-  <!--Bootstrap-->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 </body>
 
