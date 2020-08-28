@@ -404,9 +404,12 @@ font-family: sans-serif;
 
         <h2>Complainent Information</h2>
         <br />
-        <div class="input">
-        <div>
-          <label for="form-name">Province/Region:</label>
+        <div class="container">
+  <div class="row">
+    <dive class="col-12">
+        <div class="input" >
+
+          <label for="form-name">Province/Region:<br /></label>
                   <select name="Province" id="Province" >
                    <option value="Western Cape" >Western Cape</option>
                    <option value="Eastern Cape" >Eastern Cape</option>
@@ -418,24 +421,24 @@ font-family: sans-serif;
                    <option value="Northern Cape" >Mpumalanga</option>
                    <option value="Northern Cape" >North West</option>
                   </select>
-        <br />
-          <label for="form-name">Complainant Name or Company:</label>
-          <textarea id="Complainent_name" rows="1"  autoexpand name="post_title" spellcheck="default" required></textarea><br>
-          </div>
+        <br /><br />
+          <label for="form-name">Complainant Name or Company:<br /></label>
+          <textarea id="Complainent_name" rows="1" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 
 
+<br />
 
           <label for="form-name">Physical Address:<br /></label>
-          <textarea id="Complainent_address" rows="3" style='width:50%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+          <textarea id="Complainent_address" rows="3" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 
 
+<br />
 
-        <br />
                 <label for="form-name">Contact Number:</label>
                 <input type="tel" id="as-you-go_tel"  style='width:100%'  spellcheck="default" required><br>
-
+<br />
                 <label for="form-name">Email Adress:</label>
-                <input type="email" id="as-you-go-email"  placeholder="Email..."  style='width:50%'  spellcheck="default" required><br>
+                <input type="email" id="as-you-go-email" style='width:100%' placeholder="Email..."  style='width:50%'  spellcheck="default" required><br>
                 <span visible-when-invalid="valueMissing"
                     validation-for="as-you-go-email"></span>
                   <span visible-when-invalid="typeMismatch"
@@ -446,7 +449,7 @@ font-family: sans-serif;
         <br />
 
         <div class="input">
-          <label for="form-name">Interference Type:</label>
+          <label for="form-name">Interference Type:<br /></label>
                   <select name="Interference_type" id="interference_type" required
                   on="change:AMP.setState({visibility:{visibility: event.value=='Repeater'?'hide':'show'}{visibility: event.value=='Alarm/433/866MHz'?'hide':'show'})">
                    <option value="Repeater" >Repeater</option>
@@ -464,13 +467,13 @@ font-family: sans-serif;
 
 
 
-          <label for="form-name">Interference Start Date:</label>
+          <label for="form-name">Interference Start Date:<br /></label>
           <input type="datetime-local"  value="YYYY-MM-DD HH:MM:SS" id="as-you-go_tel"  required><br>
-
+<br />
           <label for="form-name">Interference Location:<br /></label>
           <textarea id="Interf_location" rows="1" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
-
-          <label for="form-name">Period of Interference:</label>
+<br />
+          <label for="form-name">Period of Interference:<br /></label>
                   <select name="Interference_fre" id="Interference_period" required
                   on="change:AMP.setState({visibility: event.value=='Intermittend'?'hide':'show'})">
                    <option value="Inter" >Permanent</option>
@@ -486,27 +489,18 @@ font-family: sans-serif;
 
 
 
-
-
-
-
-
-
-
-
-
         <label for="form-name">How did you determine that this is Interference?<br /></label>
         <textarea id="Complainent_name" rows="5" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
         <br />
 
         <label for="form-name">Discribe what had been done to solve the Interference?<br /></label>
         <textarea id="Complainent_name" rows="5" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
-
+<br />
         <label for="form-name">Is there any suspected sources of the Interference?<br /></label>
         <textarea id="Complainent_name" rows="5" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 
 
-
+<br />
                 <div class="input">
                   <label for="form-name">Upload Article Image:<br></label>
                   <input type="file" name="myFile" accept="image">
@@ -521,6 +515,8 @@ font-family: sans-serif;
 
 
 
+</div>
+</div>
 </div>
 <br />
 <br />
