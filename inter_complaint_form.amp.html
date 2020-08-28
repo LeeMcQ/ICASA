@@ -410,138 +410,135 @@ font-family: sans-serif;
 
 <form action-xhr=http://www.datashine.co.za/SJ_question.php method="post" class="main-form" target="_top" custom-validation-reporting="as-you-go">
 <div>
-  <h1><br/>ICASA<br/><br/></h1>
+  <h1><br/>ICASA Interference Complaint Form<br/><br/></h1>
   </div>
 
-        <h2>Interference Complaint Form </h2>
         <p>Please complete the following complaint form.</p>
 
-<h2>Complainent Information</h2>
-<br />
-<div class="input">
-<div>
-  <label for="form-name">Complainant Name or Company:</label>
-  <textarea id="Complainent_name" rows="1" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 
-  </div>
+        <h2>Complainent Information</h2>
+        <br />
+        <div class="input">
+        <div>
+          <label for="form-name">Province/Region:</label>
+                  <select name="Province" id="Province" >
+                   <option value="Western Cape" >Western Cape</option>
+                   <option value="Eastern Cape" >Eastern Cape</option>
+                   <option value="Northern Cape" >Northern Cape</option>
+                   <option value="Free State" >Free State</option>
+                   <option value="Gauteng" >Gauteng</option>
+                   <option value="KwaZulu-Natal" >KwaZulu-Natal</option>
+                   <option value="Northern Cape" >Limpopo</option>
+                   <option value="Northern Cape" >Mpumalanga</option>
+                   <option value="Northern Cape" >North West</option>
+                  </select>
+        <br />
+          <label for="form-name">Complainant Name or Company:</label>
+          <textarea id="Complainent_name" rows="1" mx-auto autoexpand name="post_title" spellcheck="default" required></textarea><br>
+          </div>
 
 
 
-  <label for="form-name">Physical Address:<br /></label>
-  <textarea id="Complainent_address" rows="3" style='width:50%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+          <label for="form-name">Physical Address:<br /></label>
+          <textarea id="Complainent_address" rows="3" style='width:50%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
 
 
 
-<label for="form-name">Province/Region:</label>
-        <select name="Province" id="Province" >
-         <option value="Western Cape" >Western Cape</option>
-         <option value="Eastern Cape" >Eastern Cape</option>
-         <option value="Northern Cape" >Northern Cape</option>
-        </select>
-<br />
-        <label for="form-name">Contact Number:</label>
-        <input type="tel" id="as-you-go_tel"  style='width:100%'  spellcheck="default" required><br>
+        <br />
+                <label for="form-name">Contact Number:</label>
+                <input type="tel" id="as-you-go_tel"  style='width:100%'  spellcheck="default" required><br>
 
-        <label for="form-name">Email Adress:</label>
-        <input type="email" id="as-you-go-email"  placeholder="Email..."  style='width:50%'  spellcheck="default" required><br>
-        <span visible-when-invalid="valueMissing"
-            validation-for="as-you-go-email"></span>
-          <span visible-when-invalid="typeMismatch"
-            validation-for="as-you-go-email"></span>
+                <label for="form-name">Email Adress:</label>
+                <input type="email" id="as-you-go-email"  placeholder="Email..."  style='width:50%'  spellcheck="default" required><br>
+                <span visible-when-invalid="valueMissing"
+                    validation-for="as-you-go-email"></span>
+                  <span visible-when-invalid="typeMismatch"
+                    validation-for="as-you-go-email"></span>
+
+
+        <h2>Interference Information</h2>
+        <br />
+
+        <div class="input">
+          <label for="form-name">Interference Type:</label>
+                  <select name="Interference_type" id="interference_type" required
+                  on="change:AMP.setState({visibility:{visibility: event.value=='Repeater'?'hide':'show'}{visibility: event.value=='Alarm/433/866MHz'?'hide':'show'})">
+                   <option value="Repeater" >Repeater</option>
+                   <option value="Alarm/433/866MHz" >Alarm/433/866MHz</option>
+                   <option value="Amateur" >Amateur</option>
+                   <option value="Saterlight" >Saterlight</option>
+                   <option value="Mobile Network" >Mobile Network</option>
+                   <option value="Licenced Links/Wifi" >Lincenced Links/Wifi</option>
+                   <option value="Other" >Other</option>
+
+                  </select>
+                  <br />
+
+          <br />
+
+
+
+          <label for="form-name">Interference Start Date:</label>
+          <input type="datetime-local"  value="YYYY-MM-DD HH:MM:SS" id="as-you-go_tel"  required><br>
+
+          <label for="form-name">Interference Location:<br /></label>
+          <textarea id="Interf_location" rows="1" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+
+          <label for="form-name">Period of Interference:</label>
+                  <select name="Interference_fre" id="Interference_period" required
+                  on="change:AMP.setState({visibility: event.value=='Intermittend'?'hide':'show'})">
+                   <option value="Inter" >Permanent</option>
+                   <option value="Permanent" >Intermittend</option>
+                  </select>
+                  <br />
+
+                  <textarea id="Interference_fre" placeholder="Please discribe..." rows="2" style='width:100%' autoexpand name="post_title" spellcheck="default"
+                 class="hide"
+                 [class]="visibility||'show'"></textarea>
+        <br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <label for="form-name">How did you determine that this is Interference?<br /></label>
+        <textarea id="Complainent_name" rows="5" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+        <br />
+
+        <label for="form-name">Discribe what had been done to solve the Interference?<br /></label>
+        <textarea id="Complainent_name" rows="5" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+
+        <label for="form-name">Is there any suspected sources of the Interference?<br /></label>
+        <textarea id="Complainent_name" rows="5" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
+
+
+
+                <div class="input">
+                  <label for="form-name">Upload Article Image:<br></label>
+                  <input type="file" name="myFile" accept="image">
+                </div>
+
+
+                <div class="input">
+                  <label for="form-name">Image Caption:<br></label>
+                  <textarea id="form-name" rows="2" style='width:100%' autoexpand name="Image_Caption" spellcheck="default" required></textarea><br>
+                </div>
+
+
+
 
 </div>
 <br />
 <br />
 
-<h2>Interference Information</h2>
-<br />
-
-<!-- <div class="input">
-  <label for="form-name">Interference Type:</label>
-          <select name="Interference_type" id="interference_type" required
-          on="change:AMP.setState({visibility: event.value=='Permanent'?'hide':'show'})">
-           <option value="Inter" >Intermittend</option>
-           <option value="Permanent" >Permanent</option>
-          </select>
-          <br />
-
-          <!-- <textarea id="Interf_location" placeholder="Please discribe..." rows="2" style='width:70%' autoexpand name="post_title" spellcheck="default"
-         class="show"
-         [class]="visibility||'show'"></textarea> -->
-
-         <!-- <div id="Interf_location"
-        class="hide"
-        [class]="visibility||'show'">
-
-        <label for="form-name">stuff:</label>
-        <input type="datetime-local"  value="YYYY-MM-DD HH:MM:SS" id="as-you-go_tel"  autoexpand name="post_title" spellcheck="default" required><br>
-      </div>
-
-      <div id="Interf_location"
-     class="hide"
-     [class]="visibility||'show'">
-
-     <label for="form-name">radio:</label>
-     <input type="datetime-local"  value="YYYY-MM-DD HH:MM:SS" id="as-you-go_tel"  autoexpand name="post_title" spellcheck="default" required><br>
-   </div>
-
-  <br /> -->
-
-
-
-  <label for="form-name">Interference Start Date:</label>
-  <input type="datetime-local"  value="YYYY-MM-DD HH:MM:SS" id="as-you-go_tel"  required><br>
-
-  <label for="form-name">Interference Location:<br /></label>
-  <textarea id="Interf_location" rows="1" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
-
-  <label for="form-name">Period of Interference:</label>
-          <select name="Interference_fre" id="Interference_period" required
-          on="change:AMP.setState({visibility: event.value=='Intermittend'?'hide':'show'})">
-           <option value="Inter" >Permanent</option>
-           <option value="Permanent" >Intermittend</option>
-          </select>
-          <br />
-
-          <textarea id="Interference_fre" placeholder="Please discribe..." rows="2" style='width:100%' autoexpand name="post_title" spellcheck="default"
-         class="hide"
-         [class]="visibility||'show'"></textarea>
-<br />
-
-
-
-
-
-
-
-
-
-
-
-
-
-<label for="form-name">How did you determine that this is Interference?<br /></label>
-<textarea id="Complainent_name" rows="5" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
-<br />
-
-<label for="form-name">Discribe what had been done to solve the Interference?<br /></label>
-<textarea id="Complainent_name" rows="5" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
-
-<label for="form-name">Is there any suspected sources of the Interference?<br /></label>
-<textarea id="Complainent_name" rows="5" style='width:100%' autoexpand name="post_title" spellcheck="default" required></textarea><br>
-
-
-
-        <div class="input">
-          <label for="form-name">Upload Article Image:<br></label>
-          <input type="file" name="myFile" accept="image">
-        </div>
-
-
-        <div class="input">
-          <label for="form-name">Image Caption:<br></label>
-          <textarea id="form-name" rows="2" style='width:100%' autoexpand name="Image_Caption" spellcheck="default" required></textarea><br>
-        </div>
 
         <br>
         <div>
