@@ -1,19 +1,5 @@
 
 
-<?php
-//Connecting to sql db.
-$connect = mysqli_connect("n3plcpnl0137.prod.ams3.secureserver.net", "garth", "~Cx6[sOyuMKL", "devices");
-//Sending form data to sql db.
-$mres_title = mysqli_real_escape_string($connect, $_POST[post_title]);
-
-mysqli_query($connect,"INSERT INTO Lee_test_table (post_title)
-VALUES ('$_POST[post_title]')");
-
-mysqli_close($connect);
-
-unset($mres_title, $connect);
-?>
-
 <!DOCTYPE html>
 <html ⚡ lang="en-uk">
 
